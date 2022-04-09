@@ -1,0 +1,16 @@
+
+<div class=" m-3 text-center text-secondary books-container container">
+    <h1>Livros disponiveis</h1>
+    {{#each books}}
+    <div>
+        #{{this.id}} - <span class="bold"><a href="/books/{{this.id}}">{{this.title}}</a></span> 
+        - {{this.pageqty}} paginas.   
+         
+    </div>
+   
+
+
+    {{/each}}
+    <a class="btn btn-outline-secondary mt-3" href="/">Adicionar livro</a>
+
+</div> 

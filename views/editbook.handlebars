@@ -1,0 +1,14 @@
+<div class=" mt-3 container-fluid ">
+    <h1 class="display-4 text-secondary text-center">Edite seu livro</h1>
+
+    <form class="form" action="/books/updatebooks" method="post">
+        <input type="hidden" name="id" id="" value="{{book.id}}">
+        <label class="m-1" for="">Titulo:</label>
+        <input class="form-control" type="text" name="title" value="{{this.title}}" id="" placeholder="Digite o titulo">
+        <label class="m-1" for="">Paginas</label>
+        <input class="form-control" type="number" name="pageqty" value="{{this.pageqty}}" id="" placeholder="Numero de paginas">
+        <input class=" btn-lg mt-3 btn-success" type="submit" value="Editar" name="" id="">
+
+    </form>
+
+</div>
